@@ -25,6 +25,12 @@ h2 {
   letter-spacing: 1px;
 }
 
+h3 {
+  margin: 40px 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bbb;
+}
+
 h4 {
   margin: 0;
   text-transform: uppercase;
@@ -60,4 +66,49 @@ h4 {
 
 .money.minus {
   color: #c0392b;
+}
+
+.list {
+  list-style-type: none;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  color: #333;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 0;
+  padding: 2px 5px;
+  background-color: #e74c3c;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
 }
