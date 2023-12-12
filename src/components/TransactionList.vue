@@ -18,3 +18,14 @@
     </li>
   </ul>
 </template>
+
+<script setup>
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  transactions: {
+    type: Array,
+    required: true,
+  }
+})
+</script>
