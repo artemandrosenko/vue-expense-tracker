@@ -31,7 +31,7 @@ const toast = useToast();
 const transactions = ref([]);
 
 onMounted(() => {
-  const savedTransactions = JSON.parse(localStorage.getItem('transaction'));
+  const savedTransactions = JSON.parse(localStorage.getItem('transactions'));
 
   if (savedTransactions) {
     transactions.value = savedTransactions;
